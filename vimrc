@@ -30,6 +30,7 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd BufWritePre *.rb %s/\s\+$//e
 
 map <C-n> :NERDTreeToggle<CR>
 
