@@ -5,7 +5,7 @@ set expandtab
 set tabstop=2 
 set shiftwidth=2
 let g:gitgutter_terminal_reports_focus=0
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 let g:neodark#use_256color = 1 " default: 0
 set updatetime=100
 set ruler
