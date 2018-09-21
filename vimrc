@@ -33,7 +33,7 @@ call plug#end()
 
 let g:one_allow_italics = 1
 set background=dark
-colorscheme one
+colorscheme neodark
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd BufWritePre *.rb %s/\s\+$//e
