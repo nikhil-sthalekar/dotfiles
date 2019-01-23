@@ -42,7 +42,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'lervag/vimtex'
 Plug 'airblade/vim-gitgutter'
 Plug 'rakr/vim-one'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -64,7 +64,7 @@ autocmd BufWritePre *.rb %s/\s\+$//e
 
 map <C-n> :NERDTreeToggle<CR>
 
-"python with virtualenv support"
+"python with virtualenv support
 py << EOF
 import os
 import sys
