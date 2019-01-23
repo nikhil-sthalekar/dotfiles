@@ -10,21 +10,23 @@ set clipboard=unnamed
 set encoding=utf-8
 
 au BufNewFile,BufRead *.py
-  \ set tabstop=4
-  \ set softtabstop=4
-  \ set shiftwidth=4
-  \ set textwidth=79
-  \ set expandtab
-  \ set noautoindent
-  \ set fileformat=unix
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
 
 au BufNewFile,BufRead *.js, *.html, *.css, *.rb
-  \ set tabstop=2
-  \ set softtabstop=2
-  \ set shiftwidth=2
-  \ set noautoindent
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set noautoindent
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h m,atch BadWhitespace /\s\+$/
+"Flagging Unnecessary Whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -42,7 +44,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'lervag/vimtex'
 Plug 'airblade/vim-gitgutter'
 Plug 'rakr/vim-one'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'ctrlpvim/ctrlp.vim'
