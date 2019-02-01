@@ -1,13 +1,16 @@
-syntax on
 set mouse=a
 let g:gitgutter_terminal_reports_focus=0
 let NERDTreeShowHidden=0
 let g:neodark#use_256color = 1 " default: 0
-set updatetime=100
+set updatetime=50
 set ruler
 set number
 set clipboard=unnamed
 set encoding=utf-8
+set noautoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -18,7 +21,7 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css, *.rb set noautoindent
+"au BufNewFile,BufRead *.js, *.html, *.css, *.rb set noautoindent
 
 "Flagging Unnecessary Whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
