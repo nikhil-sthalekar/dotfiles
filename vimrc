@@ -5,12 +5,13 @@ let g:neodark#use_256color = 1 " default: 0
 set updatetime=50
 set ruler
 set number
-set clipboard=unnamed
+set clipboard=unnamedplus
 set encoding=utf-8
 set noautoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set go+=a
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
