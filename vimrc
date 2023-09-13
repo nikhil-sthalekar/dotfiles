@@ -30,13 +30,13 @@ au BufNewFile,BufRead *.py
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-if empty(glob('~/.vim/autoload/plug.vim'))
+if empty(glob('/home/luquoo/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('/home/luquoo/.vim/plugged')
 
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'kamwitsta/mythos'
@@ -50,6 +50,8 @@ Plug 'rakr/vim-one'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
